@@ -22,7 +22,7 @@ describe('RESTful API Token', function() {
       .end(function(err, res) {
         expect(err).to.eql(null);
         expect(res.body.success).to.eql(true);
-        expect(res.body.password).to.exist;
+        expect(res.body.hashedpassword).to.exist;
         done();
       });
   });
